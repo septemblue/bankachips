@@ -1,8 +1,21 @@
 import styles from '../styles/Footer.module.css'
-import {Logo, YellowTwirl, Email, WA, Instagram} from "../media/images";
+import {Logo, YellowTwirl} from "../media/images";
 import {css} from "@emotion/css";
+import {useContext} from "react";
+import {LanguageContext} from "../../context";
+import {FooterEN, FooterID} from "../data/LandingPageData";
+let props = {
+    WA: "",
+    Instagram: "",
+    Email: ""
+}
 
 export default function Footer() {
+    const language = useContext(LanguageContext)
+    if (language === "en-US")
+        props = FooterEN
+    else
+        props = FooterID
     return (
         <div className={styles.Footer}>
             <LeftFooter/>
@@ -31,9 +44,9 @@ function LeftFooter() {
 function RightFooter() {
     return (
         <div className={styles.rightContainer}>
-            <img src={WA} alt={"WA Button"}/>
-            <img src={Email} alt={"Email Button"}/>
-            <img src={Instagram} alt={"Instagram Button"}/>
+            <img src={props.WA} alt={"WA Button"}/>
+            <img src={props.Email} alt={"Email Button"}/>
+            <img src={props.Instagram} alt={"Instagram Button"}/>
         </div>
     );
 }

@@ -1,7 +1,19 @@
 import {AdThree} from "../../media/images";
 import {css} from "@emotion/css";
+import {LanguageContext} from "../../../context";
+import {AboutDividerID, AboutDividerEN} from "../../data/LandingPageData";
+import {useContext} from "react";
+let props = {
+    contentA: "",
+    contentB: ""
+}
 
 export default function AboutDivider() {
+    const language = useContext(LanguageContext)
+    if (language === "en-US")
+        props = AboutDividerEN
+    else
+        props = AboutDividerID
     return (
         <div className={css`
         position: relative;
@@ -18,7 +30,7 @@ export default function AboutDivider() {
               white-space: nowrap;
               color: white;
               font-family: "Aceh Soft Extra Bold";
-              text-transform: uppercase`}>Rasakan Indonesia, Dalam <span className={css`color: #FFEE57`}>Satu Gigitan</span></p>
+              text-transform: uppercase`}>{props.contentA} <span className={css`color: #FFEE57`}>{props.contentB}</span></p>
         </div>
     )
 }

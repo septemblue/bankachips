@@ -1,6 +1,17 @@
 import {css} from "@emotion/css";
+import {useContext} from "react";
+import {LanguageContext} from "../../../context";
+import {AboutID, AboutEN} from "../../data/LandingPageData";
+let props = {
+    content: ""
+}
 
 export default function About() {
+    const language = useContext(LanguageContext)
+    if (language === "en-US")
+        props = AboutEN
+    else
+        props = AboutID
     return (
         <div className={css`
           display: flex;
@@ -12,7 +23,7 @@ export default function About() {
             <p className={css`
               text-align: center;
               max-width: 700px;
-              color: #373732;`}>Banka mulai dengan mimpi sederhana. Kami ingin memberikan cemilan hangat untuk Indonesia. Kami mencari bahan dengan kualitas terbaik dan mengirim kebahagiaan untuk anda.</p>
+              color: #373732;`}>{props.content}</p>
         </div>
     )
 }

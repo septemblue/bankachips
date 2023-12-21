@@ -32,9 +32,27 @@ export const AboutID =  {
 export const AboutEN = {
     content: "Banka started with a simple dream. We wanted to bring a heartwarming snack to Indonesia, We sourced the highest quality ingredient and deliver joy to you."
 }
-export const ValueDividerID = {
-    content : "RASAKAN INDONESIA, DALAM SATU GIGITAN"
+export const AboutDividerID = {
+    contentA : "RASAKAN INDONESIA, DALAM ",
+    contentB : "SATU GIGITAN"
 }
-export const ValueDividerEN  = {
-    content: "TASTE INDONESIA, IN A SINGLE BITE"
+export const AboutDividerEN  = {
+    contentA: "TASTE INDONESIA, IN A ",
+    contentB: "SINGLE BITE"
+}
+export const FooterID = {
+    WA: WA,
+    Instagram: Instagram,
+    Email: Email
+}
+export const FooterEN = {
+    WA: WAEN,
+    Instagram: InstagramEN,
+    Email: EmailEN
+}
+export const MarketID = {
+    blueButtonContent: "Cari Tau Yuk",
+}
+export const MarketEN = {
+    blueButtonContent: "Learn More!",
 }

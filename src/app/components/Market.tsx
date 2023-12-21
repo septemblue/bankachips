@@ -1,16 +1,25 @@
 import styled from "@emotion/styled";
-
+import {useContext} from "react";
+import {LanguageContext} from "../../context";
+import {MarketID, MarketEN} from "../data/LandingPageData";
+let props = {
+    blueButtonContent: ""
+}
 interface MarketProps {
     image: string,
     marketName: string
 }
-export default function Market(props: MarketProps) {
-
+export default function Market(marketProps: MarketProps) {
+    const language = useContext(LanguageContext)
+    if (language === "en-US")
+        props = MarketEN
+    else
+        props = MarketID
     return (
         <div className={"market"}>
-            <img src={props.image} alt={"Market"}/>
-            <MarketName>{props.marketName}</MarketName>
-            <BlueButton>Cari Tau Yuk</BlueButton>
+            <img src={marketProps.image} alt={"Market"}/>
+            <MarketName>{marketProps.marketName}</MarketName>
+            <BlueButton>{props.blueButtonContent}</BlueButton>
         </div>
     )
 }
