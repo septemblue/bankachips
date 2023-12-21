@@ -1,0 +1,39 @@
+.SecondValueJumbo {
+    display: flex;
+    flex-direction: row;
+}
+.leftContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #FFEE57;
+}
+.splitLeftContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.splitLeftContainer img {
+    width: 49%;
+}
+.rightContainer {
+    color: #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #0081DE;
+    width: 100%;
+}
+.rightContainer * {
+    padding: 35px;
+}
+.value {
+    font-family: "Aceh Soft Extra Bold";
+    width: 450px;
+    font-size: 3rem;
+}
+.description {
+    width: 450px;
+    font-size: 1.5rem;
+}

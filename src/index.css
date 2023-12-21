@@ -1,13 +1,112 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Ubunty&family=Yellowtail&display=swap');
+@font-face {
+  font-family: 'Aceh Soft Regular';
+  src: url('./app/media/fonts/AcehSoft-Regular.ttf') format('truetype');
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'Aceh Soft-Black';
+  src: url('./app/media/fonts/AcehSoft-Black.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Aceh Soft Bold';
+  src: url('./app/media/fonts/AcehSoft-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Aceh Soft Extra Bold';
+  src: url('./app/media/fonts/AcehSoft-ExtraBold.ttf') format('truetype');
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: 'Aceh Soft Regular';
+  overflow-x: hidden;
+  width: 100%;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.productsDivider {
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+}
+.productsDivider p:nth-child(1) {
+  color: #0081DE;
+  text-transform: uppercase;
+  font-family: "Aceh Soft Extra Bold";
+}
+.productsDivider p:nth-child(2) {
+  padding-left: 25px;
+  margin-bottom: 20px;
+  font-size: 6.5rem;
+  font-family: "Yellowtail";
+  color: #373732;
+}
+.marketDivider {
+  position: relative;
+  width: 100%;
+  padding: 50px 50px 150px 50px;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 6.5rem;
+}
+.marketDivider p:nth-child(1) {
+  color: #0081DE;
+  margin-right: 10%;
+  text-transform: uppercase;
+  font-family: "Aceh Soft Extra Bold";
+}
+.marketDivider p:nth-child(2) {
+  position: absolute;
+  top: 32%;
+  padding-left: 250px;
+  margin-right: 5%;
+  font-size: 8rem;
+  transform: rotate(-5deg);
+  font-family: "Yellowtail";
+  color: #373732;
 }

@@ -1,0 +1,41 @@
+.Footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background: #0081DE;
+    padding: 5% 5% 1% 5%;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.MiddleFooter {
+}
+.MiddleFooter img {
+    object-fit: contain;
+    top: -5%;
+    left: 35%;
+    position: absolute;
+}
+.leftContainer {
+    width: 100%;
+    color: #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    font-family: "Aceh Soft Extra Bold";
+    justify-content: space-around;
+}
+.leftContainer img {
+    width: 15%;
+}
+.rightContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px 50px;
+    gap: 30px;
+    margin-right: 5%;
+}
+.rightContainer img {
+    width: 150%;
+    height: auto;
+}

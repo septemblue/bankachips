@@ -1,0 +1,39 @@
+.LandingPage {
+}
+.topShelf {
+    display: flex;
+    flex-direction: row;
+}
+.topShelf *, .bottomShelf * {
+    width: 100%;
+}
+.bottomShelf {
+    display: flex;
+    flex-direction: row;
+}
+.product {
+    padding: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.product img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+.product p {
+    position: absolute;
+    top: 90%;
+    left: -3%;
+    font-size: 4rem;
+    text-align: center;
+}
+.market {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
